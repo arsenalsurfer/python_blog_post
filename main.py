@@ -29,6 +29,7 @@ ckeditor = CKEditor(app)
 Bootstrap5(app)
 
 # Configure Gravatar settings (this is the new way)
+# Adding the flask_avatars
 app.config['AVATARS_GRAVATAR_SIZE'] = 100
 app.config['AVATARS_GRAVATAR_RATING'] = 'g'
 app.config['AVATARS_GRAVATAR_DEFAULT'] = 'retro'
