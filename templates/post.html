@@ -56,8 +56,8 @@
                 <p>{{comment.text|safe}} <a href="{{url_for('delete_comment', comment_id=comment.id, post_id=post.id)}}">❌</a></p>
                 <span class="date sub-text">{{comment.comment_author.name}}</span>
 
-                <p style="font-size: 10px; color: red;">Email: {{ comment.comment_author.email }}</p>
-                <p style="font-size: 10px; color: blue;">URL: {{ avatars.gravatar(comment.comment_author.email) }}</p>
+<!--                <p style="font-size: 10px; color: red;">Email: {{ comment.comment_author.email }}</p>-->
+<!--                <p style="font-size: 10px; color: blue;">URL: {{ avatars.gravatar(comment.comment_author.email) }}</p>-->
               </div>
             </li>
           </ul>
