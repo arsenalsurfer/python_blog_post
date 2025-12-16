@@ -26,6 +26,7 @@ def gravatar_url(email, size=100, default='identicon', rating='g'):
 app = Flask(__name__)
 app.jinja_env.globals['gravatar_url'] = gravatar_url
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+#app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
@@ -60,6 +61,7 @@ def load_user(user_id):
 class Base(DeclarativeBase):
     pass
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///posts.db")
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
